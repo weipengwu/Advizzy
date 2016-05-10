@@ -1,0 +1,71 @@
+
+.ui-autocomplete 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+
+.ui-menu .ui-menu-item 
+{
+	position: relative;
+	margin: 0;
+	padding: 3px 1em 3px .4em;
+	cursor: pointer;
+	min-height: 0; /* support: IE7 */
+	/* support: IE10, see #8844 */
+	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+
+.ui-menu-icons .ui-menu-item 
+{
+	padding-left: 2em;
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background : #CCCCCC;
+	color: #333333;
+}
+
+.ui-widget-content .ui-state-default 
+{
+	border: 1px solid #cccccc;
+	font-weight: bold;
+	color: #1c94c4;
+}
+
+.ui-widget-content .ui-state-hover,
+.ui-widget-content .ui-state-focus
+{
+	border: 1px solid #cccccc;
+	font-weight: bold;
+	color: #32924a;
+}
+
+.ui-widget-content .ui-state-active
+{
+	border: 1px solid #cccccc;
+	font-weight: bold;
+	color: #32924a;
+}
+
+.ui-widget-content .ui-state-disabled
+{
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+.ui-tooltip
+{
+	background: #FFF;
+	border: none;
+	width: 20%;
+	color: #751919;
+	font-style: italic;
+}

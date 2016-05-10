@@ -1,0 +1,34 @@
+I have done some task which is removed from front end but not from backend. so to enable the functionality please follow this file
+
+
+1 To enable recent activity functionality and Page view
+	1 Go to route.php and remove // in front of <Route::get('/recentActivity', "UserController@recentActivity");> line
+	2 Go to view -> dashboard.blade.php and uncomment the lines 
+					<form action="/recentActivity" method="get">
+						<button class="button round custom_white_button">
+							<b>Recent Activity</b><i class="fa fa-arrow-right"></i>
+						</button>
+					</form>
+
+2 To enable Target functionality
+	1 Go to view -> dashboard.blade.php and uncomment the lines below comment <!-- Choose Demographic Bar --> to <!-- END OF Choose Demographic Bar --> comment
+	2 Search comment and uncomment it also
+	<!-- <input type="hidden" id="targetsEdit" name="targets" />
+		<div class="large-12 columns space_left space_right space_top space_bottom">
+			<ul class="large-block-grid-3">
+				@foreach($targets as $target)
+				<li>
+					<button type="button" class="custom_white_button dark_text targetsForEditQuestion inactiveEditTarget" style="background: white;" value="{{$target->id}}"  id="targetEdit{{$target->id}}">
+						{{$target->name}} <i class="fa fa-plus green_text"></i>
+					</button>
+				</li>
+				@endforeach
+			</ul>
+		</div>
+		<button type="button" class="custom_white_button space_bottom">
+			SKIP
+		</button>
+		<input type="submit" value="DONE" class="button space_bottom"/> -->
+		
+	3 Go to QuestionController.php and uncomment code below //code to set target values into database line from postQuestion Function
+		
